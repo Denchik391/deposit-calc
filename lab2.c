@@ -33,7 +33,7 @@ int main()
 		}	
 	}
 	
-	if (day>=31 || day<=120)
+	if (day>=31 && day<=120)
 	{
 		if (sum <100000)
         {
@@ -46,7 +46,7 @@ int main()
 
 	}
 	
-	if (day>=121 || day<=240)
+	if (day>=121 && day<=240)
     {
         if (sum <100000)
         {
@@ -59,7 +59,7 @@ int main()
      
     }
     
-    if (day>=241 || day<=365)
+    if (day>=241 && day<=365)
     {
         if (sum <100000)
         {
@@ -71,6 +71,8 @@ int main()
         }
      
     }
+    
+    printf("\nIncome: %d",income);
 
 	return 0;
 	
